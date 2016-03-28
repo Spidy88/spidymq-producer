@@ -1,0 +1,50 @@
+{
+  "name": "spidymq-producer",
+  "version": "1.0.0",
+  "description": "A web application that produces simple math problems for a SpidyMQ channel",
+  "main": "index.js",
+  "scripts": {
+    "start": "nf start",
+    "test": "mocha --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Spidy88/spidymq-producer.git"
+  },
+  "keywords": [
+    "spidymq",
+    "producer"
+  ],
+  "author": "Nick Ferraro <nick.ferraro@hackreactor.com>",
+  "license": "CC-BY-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/Spidy88/spidymq-producer/issues"
+  },
+  "homepage": "https://github.com/Spidy88/spidymq-producer#readme",
+  "dependencies": {
+    "config": "1.19.0",
+    "connect": "3.4.1",
+    "ejs": "2.4.1",
+    "serve-static": "1.10.2",
+    "socket.io": "1.4.5",
+    "spidymq": "git://github.com/spidy88/spidymq.git#1.0.0",
+    "winston": "2.2.0"
+  },
+  "devDependencies": {
+    "grunt": "0.4.5",
+    "grunt-autoprefixer": "3.0.4",
+    "grunt-bower-concat": "1.0.0",
+    "grunt-browserify": "5.0.0",
+    "grunt-concurrent": "2.2.1",
+    "grunt-contrib-clean": "1.0.0",
+    "grunt-contrib-copy": "1.0.0",
+    "grunt-contrib-cssmin": "1.0.1",
+    "grunt-contrib-jshint": "1.0.0",
+    "grunt-contrib-uglify": "1.0.1",
+    "grunt-contrib-watch": "1.0.0",
+    "grunt-mocha-test": "0.12.7",
+    "grunt-nodemon": "0.4.1",
+    "grunt-sass": "1.1.0",
+    "mocha": "2.4.5"
+  }
+}

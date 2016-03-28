@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="spidymq.producer">
+<head>
+    <title>SpidyMQ Producer</title>
+    <link rel="stylesheet" href="css/vendors.css" />
+    <link rel="stylesheet" href="css/producer.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12">
+                    <div class="text-center">
+                        <h1>Producer</h1>
+                        <h4><%= producerName %></h4>
+                    </div>
+
+                    <p>
+                        This web application provides visualizations and minor control over a task producer. This task
+                        producer generates simple math problems that get placed on a message queue to be processed by
+                        consumers (aka workers). Enjoy!
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <ui-view></ui-view>
+        </main>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/vendors.js"></script>
+    <script src="js/producer.js"></script>
+</body>
+</html>

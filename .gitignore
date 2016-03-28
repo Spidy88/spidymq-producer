@@ -1,0 +1,6 @@
+.idea
+node_modules
+client/vendor
+config/development.js
+webapp.build
+.env

@@ -1,0 +1,8 @@
+<section class="row">
+    <article class="math-task text-center col-lg-3 col-md-4 col-sm-6 col-xs-12" ng-repeat="(id, task) in ctrl.tasks track by id">
+        <div class="math-problem">{{ task.problem }}</div>
+        <div class="math-solution">{{ task.solution }}</div>
+        <div>Produced by: {{ task.producer }}</div>
+        <div>Consumed by: {{ task.consumer }}</div>
+    </article>
+</section>
