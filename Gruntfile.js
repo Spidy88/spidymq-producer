@@ -11,6 +11,9 @@ module.exports = function(grunt) {
     grunt.registerTask('minify', ['uglify', 'cssmin']);
     grunt.registerTask('test', ['jshint', 'mochaTest']);
 
+    // Tasks for heroku buildpack
+    grunt.registerTask('heroku', 'production');
+
     grunt.initConfig({
         browserify: {
             prod: {
